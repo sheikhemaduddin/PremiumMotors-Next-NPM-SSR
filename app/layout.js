@@ -1,4 +1,15 @@
-export const metadata = { title: 'Next Custom Server — Cloudways', description: 'Next.js custom server launch test.' };
+import { Inter } from 'next/font/google';
+import './globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
 export default function RootLayout({ children }) {
-  return (<html lang="en"><body style={{margin:0,fontFamily:'system-ui,sans-serif',background:'#0b0b0f',color:'#eaeaf0'}}>{children}</body></html>);
+  return (
+    <html lang="en" className={inter.variable}>
+      <body>{children}</body>
+    </html>
+  );
 }
