@@ -14,3 +14,4 @@ npm run build    # static export to out/
 npm start        # serve out/ in production
 ```
 # next-npm-csr
+# next-npm-csr
